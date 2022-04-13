@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+//   $("p").click(function(){
+//   $("#p1").mouseenter(function(){
+//   $("#p1").mouseout(function(){
+//   $("#p1").mouseleave(function(){
+//   $("#p1").mousedown(function(){
+//   $("#p1").mouseup(function(){
+//     alert("Mouse up over p1!")
+//   });
+// $("#p1").hover(function(){
+//     alert("You entered p1!");
+//   },
+//   function(){
+//     alert("Bye! You now leave p1!");
+//   }); 
+
+
+// $("input").focus(function(){
+//     $(this).css("background-color", "yellow");
+//   });
+//   $("input").blur(function(){
+//     $(this).css("background-color", "green");
+//   });
+
+
+$("p").on({
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "lightblue");
+    }, 
+    click: function(){
+      $(this).css("background-color", "red");
+    }  
+  });
+
+
+});
+</script>
+</head>
+<body>
+
+<!-- <h3>If you click on me, I will disappear.</h3>
+<p>Click me away!</p>
+<p>Click me too!</p> -->
+
+<!-- <p id="p1">You want to leave paragraph</p> -->
+<!-- Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email"> -->
+<!-- 
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p> -->
+
+<p>Click the paragraph move the</p>
+</body>
+</html>
+
